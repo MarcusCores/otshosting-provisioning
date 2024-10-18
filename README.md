@@ -1,4 +1,4 @@
-[DOCUMENTATION on wiki](https://github.com/DevelopersPL/otshosting-provisioning/wiki)
+[DOCUMENTATION on wiki](https://github.com/MarcusCores/otshosting-provisioning/wiki)
 
 otshosting-provisioning
 =======================
@@ -13,7 +13,7 @@ A script to run on a standalone machine to provision it. If user "otsmanager" do
 #!/bin/bash -ex
 apt-get update
 apt install -y -q python3-simplejson git-core ansible
-ansible-pull -i localhost, -U https://github.com/DevelopersPL/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge -t default
+ansible-pull -i localhost, -U https://github.com/MarcusCores/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge -t default
 ```
 
 Available tags:
@@ -55,5 +55,5 @@ packages:
  - aptitude
 
 runcmd:
-  - 'ansible-pull -i localhost, -U https://github.com/DevelopersPL/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge'
+  - 'ansible-pull -i localhost, -U https://github.com/MarcusCores/otshosting-provisioning.git -d /srv/otshosting-provisioning --purge'
 ```
